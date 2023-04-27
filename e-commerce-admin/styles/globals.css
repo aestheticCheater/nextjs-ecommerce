@@ -2,3 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    max-height: 100%
+}
+
+input, textarea{
+    @apply border-2 border-gray-300 rounded-md px-1 w-full;
+    @apply mb-2;
+}
+
+
+input:focus, textarea:focus{
+    @apply text-sky-600;
+}
+
+h1{
+    @apply  text-sky-500 mb-2 text-xl;
+}
+
+label{
+    @apply text-sky-500;
+}
+
+.btn-primary{
+    @apply bg-blue-900 text-white px-4 py-1 rounded-md;
+}
+
+table.basic{
+    @apply w-full;
+}
+
+table.basic thead tr td{
+    @apply bg-blue-100;
+}
+
+table.basic tr td{
+    @apply border border-blue-200 p-1;
+}
+
+table.basic a{
+    @apply bg-blue-900 text-white text-sm items-center p-2 rounded-md inline-flex float-right gap-1 m-1;
+}
